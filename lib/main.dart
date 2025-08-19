@@ -1,5 +1,6 @@
-import 'package:bookly/constants.dart';
-import 'package:bookly/features/splash/presentation/splash_view.dart';
+import 'package:bookly/constants/constant_colors.dart';
+import 'package:bookly/features/onboarding/presentation/views/onboarding_view.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,12 +15,12 @@ class Bookly extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter clean architecture',
+      title: 'AL Hawar',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: kPrimaryColor,
       ),
-      home: SplashView(),
+      home: OnbordingViews(),
     );
   }
 }
