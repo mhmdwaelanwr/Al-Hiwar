@@ -1,23 +1,22 @@
 class BoardingModel {
   final String title;
-
+ final String subTitle;
   final String imageData;
 
   BoardingModel({
     required this.title,
-
-    required this.imageData,
+required this.subTitle,   required this.imageData,
   });
 
   static List<BoardingModel> boardingListModel = [
     BoardingModel(
-      title: " استمتع بتنقل سهل بإستخدام المواصلات العامة!واستمتع بتنقل سهل بإستخدام المواصلات العامة!و",
-     
+      title: "منصةً الاقتصادِ التي تُحلّقُ بفكر المستثمرين نُنتجُ إعلامًا اقتصاديًّا حيَّا يرصدُ تحرّكات الأسواق لحظةً بلحظة.\nويُبرِزُ قصصَ النجاح والمبادراتِ الاستثماريةَ الواعدة في الخليج  والوطن العربي.",
+     subTitle: "",
       imageData: 'assets/images/chart1.png',
     ),
     BoardingModel(
-      title: "حلول تسويقية متكامة تعزز الحضور الرقمي و تربط العلامات التجارية بالاعلام المرئي.",
-     
+      title: "حلول تسويقية ذكية تُحوِّلُ وجودكم الرقمي  إلى قوة اقتصادية نَصممُ حزمًا متكاملةً تُعزِّزُ هيمنةَ علامتكم التجارية في السوق الخليجية، وتربط بين قوتكم الإعلامية على شاشتنا  وانتشاركم الرقمي عبر المنصات.",
+     subTitle: "ابدأ رحلتك نحو الهيمنة السوقية",
       imageData: 'assets/images/chart2.png',
     ),
 

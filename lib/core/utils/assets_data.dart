@@ -9,6 +9,7 @@ class AssetImages {
   );
   static final Widget background1 = Image.asset(
     'assets/images/background1.jpg',
+    fit: BoxFit.cover,
   );
   static final Widget background2 = Image.asset(
     'assets/images/background2.jpg',
@@ -40,7 +41,13 @@ class AssetImages {
   );
   static final Widget logoWnameBig = Image.asset(
     'assets/images/logoWnameBig.png',
-    width: AppDimensions.imageWidth(0.4),
-    height: AppDimensions.imageHeight(0.2),
+    width: AppDimensions.imageWidth(0.2),
+    height: AppDimensions.imageHeight(0.1),
+  );
+  static final Widget logoWnameVeryBig = Image.asset(
+    'assets/images/logoWnameBig.png',
+    width: AppDimensions.imageWidth(0.5),
+    height: AppDimensions.imageHeight(0.12),
+    fit: BoxFit.fill,
   );
 }
