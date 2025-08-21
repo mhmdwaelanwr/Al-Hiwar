@@ -3,7 +3,9 @@ import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
 import 'package:bookly/core/common/special_appbar.dart';
 import 'package:bookly/core/common/special_drawer.dart';
+import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
 import 'package:bookly/core/utils/assets_data.dart';
+import 'package:bookly/features/whoUs/presentation/views/more.dart';
 import 'package:flutter/material.dart';
 
 class WhoUsView extends StatelessWidget {
@@ -169,7 +171,14 @@ class WhoUsView extends StatelessWidget {
                         ),
                       ),
 
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MoreWhoUsView(),
+                          ),
+                        );
+                      },
                       child: Text(
                         "المزيد",
                         style: TextStyles.textStyleNormalWhite,

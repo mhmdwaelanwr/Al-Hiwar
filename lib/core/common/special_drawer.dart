@@ -1,7 +1,9 @@
 import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
+import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
 import 'package:bookly/core/utils/assets_data.dart';
+import 'package:bookly/features/home/presentation/views/after_onboarding.dart';
 
 import 'package:bookly/features/whoUs/presentation/views/who_us_view.dart';
 import 'package:flutter/material.dart';
@@ -20,18 +22,21 @@ class SpecialDrawer extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.2,
             width: double.infinity,
             child: Center(
-              child: AssetImages.logoWnameBig,
-              // Text(
-              //   "الحوار الاقتصادي",
-              //   style: TextStyle(color: Colors.white, fontSize: 24),
-              // ),
+              child:
+              // AssetImages.logoWnameBig,
+              Text(
+                "الحوار الاقتصادي",
+                style: TextStyle(color: Colors.white, fontSize: 24),
+              ),
             ),
           ),
           SizedBox(height: 10),
           DrawerItem(
             text: "الرئيسية",
             leadingIcon: Icons.home,
-            widgetViewToGo: WhoUsView(),
+            widgetViewToGo: SpecialScaffoldWithBackground(
+                                backgroundImage:AssetImages.background0 ,body:AfterOnBoardingBody() ,
+                              ),
                
           ),
           SizedBox(height: 10),
@@ -89,7 +94,7 @@ class DrawerItem extends StatelessWidget {
         style: TextStyles.textStyleNormalWhite,
         textDirection: TextDirection.rtl,
       ),
-      onTap:  () => Navigator.push(
+      onTap:  () => Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (co) => widgetViewToGo),
                 ),

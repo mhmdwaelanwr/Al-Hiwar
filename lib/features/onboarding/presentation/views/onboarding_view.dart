@@ -1,6 +1,7 @@
 import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
+import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
 import 'package:bookly/core/utils/assets_data.dart';
 import 'package:bookly/features/home/presentation/views/after_onboarding.dart';
 import 'package:bookly/features/onboarding/presentation/view_models/onboarding_model.dart';
@@ -36,7 +37,8 @@ class _OnbordingViewsState extends State<OnbordingViews> {
                 left: 20.0,
                 right: 20.0,
               ),
-              child: Column(
+              child: 
+              Column(
                 children: [
                   Align(
                     alignment: Alignment.topRight,
@@ -89,7 +91,9 @@ class _OnbordingViewsState extends State<OnbordingViews> {
                           if (isLastPage) {
                             navigationAndFinish(
                               context: context,
-                              widgetView: AfterOnboarding(),
+                              widgetView: SpecialScaffoldWithBackground(
+                                backgroundImage:AssetImages.background0 ,body:AfterOnBoardingBody() ,
+                              ),
                             );
                           } else {
                             boardController.nextPage(

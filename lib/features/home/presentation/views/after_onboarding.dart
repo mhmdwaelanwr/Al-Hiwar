@@ -1,30 +1,15 @@
 import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
-import 'package:bookly/core/common/special_appbar.dart';
-import 'package:bookly/core/common/special_drawer.dart';
-import 'package:bookly/core/utils/assets_data.dart';
 import 'package:flutter/material.dart';
 
-class AfterOnboarding extends StatelessWidget {
-  const AfterOnboarding({super.key});
+
+class AfterOnBoardingBody extends StatelessWidget {
+  const AfterOnBoardingBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: SpecialDrawer(),
-      body: Stack(
-        children: [
-          SizedBox.expand(child: AssetImages.background0),
-          Container(color: Colors.black.withOpacity(0.65)),
-          Padding(
-            padding: EdgeInsets.only(
-              top: AppDimensions.screenHeight * 0.185,
-              left: AppDimensions.mediumPadding,
-              right: AppDimensions.mediumPadding,
-            ),
-            child: SingleChildScrollView(
-              child: Column(
+    return Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -65,12 +50,6 @@ class AfterOnboarding extends StatelessWidget {
                     ),
                   ),
                 ],
-              ),
-            ),
-          ),
-          SpecialAppBar(),
-        ],
-      ),
-    );
+              );
   }
 }
