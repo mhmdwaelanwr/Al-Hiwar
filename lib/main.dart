@@ -20,6 +20,13 @@ class Bookly extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: kPrimaryColor,
       ),
+       builder: (context, child) {
+        // تثبيت textScaleFactor على 1.0
+        return MediaQuery(
+          data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+          child: child!,
+        );
+      },
       home: OnbordingViews(),
     );
   }

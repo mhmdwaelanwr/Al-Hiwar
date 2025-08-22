@@ -5,36 +5,36 @@ import 'package:flutter/rendering.dart';
 abstract class TextStyles {
   static TextStyle textStyleTitleGreen = TextStyle(
     color: kPrimaryColor,
-    fontSize: AppDimensions.fontSize(0.055),
+    fontSize: AppDimensions.fontSize(0.08),
     fontWeight: FontWeight.w700,
   );
   static TextStyle textStyleNormalGreen = TextStyle(
     color: kPrimaryColor,
-    fontSize: AppDimensions.fontSize(0.035),
+    fontSize: AppDimensions.fontSize(0.05),
     fontWeight: FontWeight.w700,
   );
 
   static TextStyle textStyleBigWhite = TextStyle(
     color: kWhiteColor,
-    fontSize: AppDimensions.fontSize(0.065),
+    fontSize: AppDimensions.fontSize(0.08),
     fontWeight: FontWeight.w700,
   );
   static TextStyle textStyleNormalWhite = TextStyle(
     color: kWhiteColor,
-    fontSize: AppDimensions.fontSize(0.04),
+    fontSize: AppDimensions.fontSize(0.06),
     fontWeight: FontWeight.w600,
   );
   static TextStyle textStyleNormalWhiteWithUnderLine = TextStyle(
     decoration: TextDecoration.underline,
      decorationColor: kWhiteColor,
     color: kWhiteColor,
-    fontSize: AppDimensions.fontSize(0.042),
+    fontSize: AppDimensions.fontSize(0.055),
     fontWeight: FontWeight.w700,
   );
 
   static TextStyle textStyleSmallSilver = TextStyle(
     color: ksilverColor,
-    fontSize: AppDimensions.fontSize(0.02),
+    fontSize: AppDimensions.fontSize(0.035),
     fontWeight: FontWeight.w400,
   );
 }
