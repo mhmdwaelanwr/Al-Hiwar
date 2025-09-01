@@ -14,6 +14,7 @@ class Bookly extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+        AppDimensions.init(context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AL Hawar',
@@ -22,7 +23,6 @@ class Bookly extends StatelessWidget {
         scaffoldBackgroundColor: kPrimaryColor,
       ),
        builder: (context, child) {
-        AppDimensions.init(context);
         // تثبيت textScaleFactor على 1.0
         return MediaQuery(
           data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),

@@ -21,12 +21,15 @@ class AssetImages {
   );
   static final Widget background01 = Image.asset(
     'assets/images/background01.jpg',
+    fit: BoxFit.cover,
   );
   static final Widget background02 = Image.asset(
     'assets/images/background02.jpg',
+      fit: BoxFit.cover,
   );
   static final Widget background03 = Image.asset(
     'assets/images/background03.jpg',
+      fit: BoxFit.cover,
   );
   static final Widget homeIcon = Image.asset('assets/images/homeIcon.png');
   static final Widget aboutUsIcon = Image.asset(
@@ -54,15 +57,13 @@ class AssetImages {
   );
   static final Widget instagram = Image.asset(
     'assets/images/instagram.png',
-  
+
     fit: BoxFit.fill,
   );
 
   static final Widget whatsap = Image.asset(
     'assets/images/whatsap.png',
-  
+
     fit: BoxFit.fill,
   );
-
-
 }

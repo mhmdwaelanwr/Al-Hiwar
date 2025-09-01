@@ -9,6 +9,10 @@ class AppDimensions {
     final size = MediaQuery.of(context).size;
     screenWidth = size.width;
     screenHeight = size.height;
+     if (screenWidth == 0 || screenWidth.isNaN) {
+    screenWidth= 400;
+    screenHeight= 900;
+  }
   }
 
 
