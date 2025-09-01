@@ -3,7 +3,10 @@ import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
 import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
 import 'package:bookly/core/utils/assets_data.dart';
+import 'package:bookly/features/contact_us/presentation/views/contact_us_view.dart';
 import 'package:bookly/features/home/presentation/views/after_onboarding.dart';
+
+import 'package:bookly/features/our_services/views/our_services_view.dart';
 
 import 'package:bookly/features/whoUs/presentation/views/who_us_view.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +52,7 @@ class SpecialDrawer extends StatelessWidget {
           DrawerItem(
             text: "خدماتنا",
             leadingIcon: Icons.tv,
-           widgetViewToGo: WhoUsView(),
+           widgetViewToGo: OurServicesView(),
           ),
           SizedBox(height: 10),
           DrawerItem(
@@ -61,7 +64,7 @@ class SpecialDrawer extends StatelessWidget {
           DrawerItem(
             text: "تواصل معنا",
             leadingIcon: Icons.call,
-          widgetViewToGo: WhoUsView(),
+          widgetViewToGo: ContactUsView(),
           ),
         ],
       ),

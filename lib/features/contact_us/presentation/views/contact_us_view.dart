@@ -1,0 +1,238 @@
+import 'package:bookly/constants/constant_app_dimentions.dart';
+import 'package:bookly/constants/constant_text_style.dart';
+import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
+import 'package:bookly/core/utils/assets_data.dart';
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class ContactUsView extends StatelessWidget {
+
+// Define all the URLs
+  final Uri facebookUrl = Uri.parse(
+      'https://www.facebook.com/share/1CXsYYuPYe/?mibextid=wwXIfr');
+
+  final Uri instagramUrl = Uri.parse(
+      'https://www.instagram.com/alhiwaraliqtisadi?igsh=cnI2cW1tMjhhcHoy&utm_source=qr');
+
+  final Uri threadsUrl = Uri.parse(
+      'https://www.threads.com/@alhiwaraliqtisadi?igshid=NTc4MTIwNjQ2YQ==');
+
+  final Uri youtubeUrl = Uri.parse(
+      'https://youtube.com/channel/UClSpCa4VCnEPx9CjbAf0ZPg?si=ItuxOotx9ZNvChSY');
+
+  final Uri xUrl = Uri.parse('https://x.com/alhiwarecotv?s=11');
+
+
+  // Function to launch URL
+  Future<void> _launchUrl(Uri url) async {
+    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+
+
+  @override
+  Widget build(BuildContext context) {
+
+
+    return SpecialScaffoldWithBackground(
+      backgroundImage: AssetImages.background3,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Text(
+            "تواصل معنا",
+            style: TextStyles.textStyleBigWhite,
+            textDirection: TextDirection.rtl,
+          ),
+          SizedBox(height: 20),
+          Text(
+            "نسعد باستفساراتكم ومقترحاتكم, ونتطلع للتعاون معكم في مشاريع إعلامية واقتصادية مميزة. ",
+            style: TextStyles.textStyleSmallSilver,
+            textAlign: TextAlign.center,
+          ),
+          SizedBox(height: 20),
+          ContactUsContainer(),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                child: Text(
+                  "facebook",
+                  style: TextStyles.textStyleNormalWhiteWithUnderLine,
+                  textDirection: TextDirection.rtl,
+                ),
+                onPressed:()=> _launchUrl(facebookUrl),
+              ),
+              Icon(
+                Icons.facebook,
+                color: Colors.white,
+                size: AppDimensions.iconSize(),
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                child: Text(
+                  "instagram",
+                  style: TextStyles.textStyleNormalWhiteWithUnderLine,
+                  textDirection: TextDirection.rtl,
+                ),
+                onPressed:  ()=> _launchUrl(instagramUrl),
+              ),
+              AssetImages.instagram,
+            ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                child: Text(
+                 "Threads",
+                  style: TextStyles.textStyleNormalWhiteWithUnderLine,
+                  textDirection: TextDirection.rtl,
+                ),
+                onPressed:  ()=> _launchUrl(threadsUrl),
+              ),
+              Text(" @",style: TextStyles.textStyleBigWhite,),
+              
+            ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                child: Text(
+                  "Youtube",
+                  style: TextStyles.textStyleNormalWhiteWithUnderLine,
+                  textDirection: TextDirection.rtl,
+                ),
+                onPressed: ()  => _launchUrl(youtubeUrl),
+              ),
+              Icon(Icons.ondemand_video_rounded,
+                  color: Colors.white, size: AppDimensions.iconSize()),
+            ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                child: Text(
+                  "Twitter",
+                  style: TextStyles.textStyleNormalWhiteWithUnderLine,
+                  textDirection: TextDirection.rtl,
+                ),
+                onPressed: ()  => _launchUrl(xUrl),
+              ),
+            Text(" X",style: TextStyles.textStyleBigWhite,),
+            ],
+          ),
+          SizedBox(height: 50),
+        ],
+      ),
+    );
+  }
+    
+}
+
+
+
+
+
+class ContactUsContainer extends StatelessWidget {
+  ContactUsContainer({super.key});
+
+   final Uri phoneNumber = Uri(scheme: 'tel', path: '+966570104349');
+   Future<void> _launchPhone() async {
+    if (!await launchUrl(phoneNumber)) {
+      throw Exception('Could not launch $phoneNumber');
+    }
+  }
+
+   final Uri emailUrl = Uri.parse(
+      'https://www.bing.com/ck/a?!&&p=7b260a723238d030bce5100fbce9570cb2e7077ab1d0cccd740b584cfd8b8352JmltdHM9MTc1NjY4NDgwMA&ptn=3&ver=2&hsh=4&fclid=2bba237c-6eec-6284-058d-32086fff6347&psq=Info%40alhiwaraliqtisadi.com&u=a1aHR0cHM6Ly9hbGhpd2FyYWxpcXRpc2FkaS5jb20v&ntb=1');
+
+  Future<void> _launchUrl(Uri url) async {
+    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+      throw Exception('Could not launch $url');
+    }
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.3),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Expanded(
+                child: Text(
+                  "العنوان السعودية : الرياض، الدمام.",
+                  style: TextStyles.textStyleNormalWhite,
+                  textDirection: TextDirection.rtl,
+                ),
+              ),
+              SizedBox(width: 10),
+              Icon(Icons.location_on, color: Colors.white),
+            ],
+          ),
+          SizedBox(height: 30),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              TextButton(
+                onPressed: _launchPhone,
+                child: Expanded(
+                  child: Text(
+                  "+966570104349",
+                  style: TextStyles.textStyleNormalWhite,
+                  textDirection: TextDirection.rtl,
+                ),
+                ),
+              ),
+              SizedBox(width: 10),
+              Icon(Icons.call, color: Colors.white),
+            ],
+          ),
+          SizedBox(height: 30),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              TextButton(
+                child: Expanded(
+                  child: Text(
+                    "info@alhiwar.sa",
+                    style: TextStyles.textStyleNormalWhite,
+                    textDirection: TextDirection.rtl,
+                  ),
+                ),
+                onPressed:()=> _launchUrl(emailUrl),
+              ),
+              SizedBox(width: 10),
+              Icon(Icons.email, color: Colors.white),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+ 
+}

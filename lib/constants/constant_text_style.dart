@@ -13,6 +13,13 @@ abstract class TextStyles {
     fontSize: AppDimensions.fontSize(0.05),
     fontWeight: FontWeight.w700,
   );
+  static TextStyle textStyleNormalGreenWithLine = TextStyle(
+    color: kPrimaryColor,
+    fontSize: AppDimensions.fontSize(0.05),
+    fontWeight: FontWeight.w700,
+    decoration: TextDecoration.underline,
+    decorationColor: kPrimaryColor,
+  );
 
   static TextStyle textStyleBigWhite = TextStyle(
     color: kWhiteColor,
@@ -21,12 +28,12 @@ abstract class TextStyles {
   );
   static TextStyle textStyleNormalWhite = TextStyle(
     color: kWhiteColor,
-    fontSize: AppDimensions.fontSize(0.06),
+    fontSize: AppDimensions.fontSize(0.055),
     fontWeight: FontWeight.w600,
   );
   static TextStyle textStyleNormalWhiteWithUnderLine = TextStyle(
     decoration: TextDecoration.underline,
-     decorationColor: kWhiteColor,
+    decorationColor: kWhiteColor,
     color: kWhiteColor,
     fontSize: AppDimensions.fontSize(0.055),
     fontWeight: FontWeight.w700,
@@ -34,7 +41,7 @@ abstract class TextStyles {
 
   static TextStyle textStyleSmallSilver = TextStyle(
     color: ksilverColor,
-    fontSize: AppDimensions.fontSize(0.035),
+    fontSize: AppDimensions.fontSize(0.05),
     fontWeight: FontWeight.w400,
   );
 }

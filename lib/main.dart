@@ -1,3 +1,4 @@
+import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/features/onboarding/presentation/views/onboarding_view.dart';
 
@@ -21,6 +22,7 @@ class Bookly extends StatelessWidget {
         scaffoldBackgroundColor: kPrimaryColor,
       ),
        builder: (context, child) {
+        AppDimensions.init(context);
         // تثبيت textScaleFactor على 1.0
         return MediaQuery(
           data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),

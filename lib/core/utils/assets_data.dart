@@ -13,9 +13,11 @@ class AssetImages {
   );
   static final Widget background2 = Image.asset(
     'assets/images/background2.jpg',
+    fit: BoxFit.cover,
   );
   static final Widget background3 = Image.asset(
-    'assets/images/background3.jpg',
+    'assets/images/background3.png',
+    fit: BoxFit.cover,
   );
   static final Widget background01 = Image.asset(
     'assets/images/background01.jpg',
@@ -50,4 +52,17 @@ class AssetImages {
     height: AppDimensions.imageHeight(0.12),
     fit: BoxFit.fill,
   );
+  static final Widget instagram = Image.asset(
+    'assets/images/instagram.png',
+  
+    fit: BoxFit.fill,
+  );
+
+  static final Widget whatsap = Image.asset(
+    'assets/images/whatsap.png',
+  
+    fit: BoxFit.fill,
+  );
+
+
 }
