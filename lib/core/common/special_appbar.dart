@@ -36,6 +36,7 @@ class SpecialAppBar extends StatelessWidget {
             AssetImages.whatsapp,
             Spacer(),
             AssetImages.logoWnameBig,
+            SizedBox(width: AppDimensions.screenWidth * 0.05),
           ],
         ),
       ),

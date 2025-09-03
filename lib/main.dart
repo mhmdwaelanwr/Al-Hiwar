@@ -1,6 +1,6 @@
 import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
-import 'package:bookly/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:bookly/features/splash/presentation/splash_view.dart';
 
 import 'package:flutter/material.dart';
 
@@ -29,7 +29,9 @@ class Bookly extends StatelessWidget {
           child: child!,
         );
       },
-      home: OnbordingViews(),
+      home:SplashScreen(),
+      
+       
     );
   }
 }
