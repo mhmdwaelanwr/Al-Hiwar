@@ -28,7 +28,7 @@ abstract class TextStyles {
   );
   static TextStyle textStyleNormalWhite = TextStyle(
     color: kWhiteColor,
-    fontSize: AppDimensions.fontSize(0.055),
+    fontSize: AppDimensions.fontSize(0.045),
     fontWeight: FontWeight.w600,
   );
   static TextStyle textStyleNormalWhiteWithUnderLine = TextStyle(

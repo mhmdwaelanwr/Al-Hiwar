@@ -10,6 +10,7 @@ import 'package:bookly/features/home/presentation/views/after_onboarding.dart';
 import 'package:bookly/features/our_services/views/our_services_view.dart';
 
 import 'package:bookly/features/whoUs/presentation/views/who_us_view.dart';
+import 'package:bookly/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class SpecialDrawer extends StatelessWidget {
@@ -18,6 +19,7 @@ class SpecialDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      width: AppDimensions.screenWidth * 0.6,
       backgroundColor: kblackColor,
       child: Column(
         children: [
@@ -29,43 +31,43 @@ class SpecialDrawer extends StatelessWidget {
               child:
               // AssetImages.logoWnameBig,
               Text(
-                "الحوار الاقتصادي",
+                S.of(context).drawerMainTitle,
                 style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
           ),
           SizedBox(height: 10),
           DrawerItem(
-            text: "الرئيسية",
+            text: S.of(context).drawerMainScreen,
             leadingIcon: Icons.home,
             widgetViewToGo: SpecialScaffoldWithBackground(
-                                backgroundImage:AssetImages.background0 ,body:AfterOnBoardingBody() ,
-                              ),
-               
+              backgroundImage: AssetImages.background0,
+              body: AfterOnBoardingBody(),
+            ),
           ),
           SizedBox(height: 10),
           DrawerItem(
-            text: "من نحن",
+            text: S.of(context).drawerWhoUsScreen,
             leadingIcon: Icons.people,
-          widgetViewToGo: WhoUsView(),
+            widgetViewToGo: WhoUsView(),
           ),
           SizedBox(height: 10),
           DrawerItem(
-            text: "خدماتنا",
+            text: S.of(context).drawerOurServicesScreen,
             leadingIcon: Icons.tv,
-           widgetViewToGo: OurServicesView(),
+            widgetViewToGo: OurServicesView(),
           ),
           SizedBox(height: 10),
           DrawerItem(
-            text: "المدونة",
+            text: S.of(context).drawerOurDownloadScreen,
             leadingIcon: Icons.article,
-           widgetViewToGo: ArchiveView(),
+            widgetViewToGo: ArchiveView(),
           ),
           SizedBox(height: 10),
           DrawerItem(
-            text: "تواصل معنا",
+            text: S.of(context).drawerOurContactUsScreen,
             leadingIcon: Icons.call,
-          widgetViewToGo: ContactUsView(),
+            widgetViewToGo: ContactUsView(),
           ),
         ],
       ),
@@ -86,7 +88,7 @@ class DrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      contentPadding: EdgeInsets.symmetric(horizontal: 36, vertical: 5),
+      contentPadding: EdgeInsets.symmetric(horizontal: 36, vertical: 16),
       tileColor: kgrayColor,
       leading: Icon(
         leadingIcon,
@@ -98,10 +100,11 @@ class DrawerItem extends StatelessWidget {
         style: TextStyles.textStyleNormalWhite,
         textDirection: TextDirection.rtl,
       ),
-      onTap:  () => Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (co) => widgetViewToGo),
-                ),
+      onTap:
+          () => Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (co) => widgetViewToGo),
+          ),
     );
   }
 }

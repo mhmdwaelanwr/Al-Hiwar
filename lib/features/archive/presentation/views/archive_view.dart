@@ -5,6 +5,7 @@ import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
 import 'package:bookly/core/utils/assets_data.dart';
 import 'package:bookly/features/archive/presentation/view_models/archive_model.dart';
 import 'package:bookly/features/archive/presentation/views/widgets/archive_widgets.dart';
+import 'package:bookly/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class ArchiveView extends StatelessWidget {
@@ -16,13 +17,13 @@ class ArchiveView extends StatelessWidget {
       backgroundImage: null,
       body: Column(
         mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.end,
+
+
         children: [
-          Text("مدونة الحوار", style: TextStyles.textStyleTitleGreen),
+          Text(S.of(context).archiveViewTitle, style: TextStyles.textStyleTitleGreen),
           SizedBox(height: AppDimensions.smallPadding),
           Text(
-            ".ستجد كل ماهو مفيد من مواضيع وشروحات",
+            S.of(context).archiveViewSubTitle,
             style: TextStyles.textStyleSmallSilver,
           ),
           SizedBox(height: AppDimensions.smallPadding),

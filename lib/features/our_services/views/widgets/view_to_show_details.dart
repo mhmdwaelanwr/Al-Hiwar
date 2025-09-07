@@ -30,7 +30,7 @@ final String description;
           Text(
            description,
             style: TextStyles.textStyleNormalWhite,
-            textDirection: TextDirection.rtl,
+
           ),
         ],
       ),

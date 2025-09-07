@@ -5,12 +5,16 @@ import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
 import 'package:bookly/core/utils/assets_data.dart';
 import 'package:bookly/features/home/presentation/views/after_onboarding.dart';
 import 'package:bookly/features/onboarding/presentation/view_models/onboarding_model.dart';
+import 'package:bookly/generated/l10n.dart';
 
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnbordingViews extends StatefulWidget {
   const OnbordingViews({super.key});
+
+
+
 
   @override
   State<OnbordingViews> createState() => _OnbordingViewsState();
@@ -22,6 +26,20 @@ class _OnbordingViewsState extends State<OnbordingViews> {
   bool isLastPage = false;
   @override
   Widget build(BuildContext context) {
+    
+   List<BoardingModel> boardingListModel = [
+    BoardingModel(
+      title: S.of(context).onBoardingTitle1,
+     subTitle: "",
+      imageData: 'assets/images/chart1.png',
+    ),
+    BoardingModel(
+      title: S.of(context).onBoardingTitle2,
+     subTitle: S.of(context).onBoardingTitle21,
+      imageData: 'assets/images/chart2.png',
+    ),
+
+  ];
     AppDimensions.init(context);
     return Scaffold(
       backgroundColor: kblackColor,
@@ -32,13 +50,12 @@ class _OnbordingViewsState extends State<OnbordingViews> {
             color: kblackColor.withOpacity(0.65),
             child: Padding(
               padding: const EdgeInsets.only(
-                bottom: 100.0,
-                top: 50.0,
+                bottom: 40.0,
+                top: 20.0,
                 left: 20.0,
                 right: 20.0,
               ),
-              child: 
-              Column(
+              child: Column(
                 children: [
                   Align(
                     alignment: Alignment.topRight,
@@ -51,12 +68,12 @@ class _OnbordingViewsState extends State<OnbordingViews> {
                       itemBuilder:
                           (context, index) => buildBoardingItem(
                             boardingModel:
-                                BoardingModel.boardingListModel[index],
+                                boardingListModel[index],
                           ),
-                      itemCount: BoardingModel.boardingListModel.length,
+                      itemCount: boardingListModel.length,
                       onPageChanged: (pageNumber) {
                         if (pageNumber ==
-                            BoardingModel.boardingListModel.length - 1) {
+                            boardingListModel.length - 1) {
                           setState(() {
                             isLastPage = true;
                           });
@@ -78,13 +95,16 @@ class _OnbordingViewsState extends State<OnbordingViews> {
                           activeDotColor: kPrimaryColor,
                         ),
                         controller: boardController,
-                        count: BoardingModel.boardingListModel.length,
+                        count: boardingListModel.length,
                       ),
                       const Spacer(),
                       FloatingActionButton.extended(
-                        label: Text(
-                          'التالي',
-                          style: TextStyles.textStyleNormalWhite,
+                        label: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Text(
+                            S.of(context).onBoardingbuttonNext,
+                            style: TextStyles.textStyleNormalWhite,
+                          ),
                         ),
                         backgroundColor: kPrimaryColor,
                         onPressed: () {
@@ -92,7 +112,8 @@ class _OnbordingViewsState extends State<OnbordingViews> {
                             navigationAndFinish(
                               context: context,
                               widgetView: SpecialScaffoldWithBackground(
-                                backgroundImage:AssetImages.background0 ,body:AfterOnBoardingBody() ,
+                                backgroundImage: AssetImages.background0,
+                                body: AfterOnBoardingBody(),
                               ),
                             );
                           } else {
@@ -118,26 +139,21 @@ class _OnbordingViewsState extends State<OnbordingViews> {
   Widget buildBoardingItem({required BoardingModel boardingModel}) => Column(
     crossAxisAlignment: CrossAxisAlignment.end,
     children: [
-      SizedBox(height: AppDimensions.screenHeight * 0.025),
       Expanded(
-        flex: 1,
         child: Image(
           height: AppDimensions.screenHeight * 0.35,
           width: AppDimensions.screenWidth * 0.9,
           image: AssetImage(boardingModel.imageData),
         ),
       ),
-      SizedBox(height: AppDimensions.screenHeight * 0.025),
-      Expanded(
-        flex: 1,
-        child: Text(
-          textDirection: TextDirection.rtl,
-          boardingModel.title,
-          style: TextStyles.textStyleNormalWhite,
-        ),
+      SizedBox(height: AppDimensions.screenHeight * 0.015),
+      Text(
+      
+        boardingModel.title,
+        style: TextStyles.textStyleNormalWhite,
       ),
       Text(
-        textDirection: TextDirection.rtl,
+      
         boardingModel.subTitle,
         style: TextStyles.textStyleNormalGreen,
       ),

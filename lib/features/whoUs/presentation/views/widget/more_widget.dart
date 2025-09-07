@@ -27,18 +27,17 @@ class MoreWidget extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.end,
+
           children: [
             Text(
               title,
               style: TextStyles.textStyleNormalWhiteWithUnderLine,
-              textDirection: TextDirection.rtl,
             ),
             SizedBox(height: 8),
             Text(
               subTitle ?? "",
               style: TextStyles.textStyleNormalWhite,
-              textDirection: TextDirection.rtl,
+              
             ),
 
             SizedBox(height: 8),
@@ -48,7 +47,6 @@ class MoreWidget extends StatelessWidget {
                 describtion,
 
                 style: TextStyles.textStyleNormalGreen,
-                textDirection: TextDirection.rtl,
               ),
             ),
           ],

@@ -5,6 +5,7 @@ import 'package:bookly/core/common/special_appbar.dart';
 import 'package:bookly/core/common/special_drawer.dart';
 import 'package:bookly/core/utils/assets_data.dart';
 import 'package:bookly/features/whoUs/presentation/views/more.dart';
+import 'package:bookly/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class WhoUsView extends StatelessWidget {
@@ -28,133 +29,128 @@ class WhoUsView extends StatelessWidget {
             ),
             child: SingleChildScrollView(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
+              
                 children: [
                   Text(
-                    "من نحن!",
+                    S.of(context).whoUsTitle1,
                     style: TextStyles.textStyleBigWhite,
-                    textDirection: TextDirection.rtl,
+                   
                   ),
                   Text(
-                    "منصة تُحرك الاستثمار وتصنع الحضور",
+                     S.of(context).whoUsTitle2,
                     style: TextStyles.textStyleTitleGreen,
-                    textDirection: TextDirection.rtl,
+                    
                   ),
                   AssetImages.logoWnameVeryBig,
                   SizedBox(height: 24),
                   Text(
-                    "صنّاع الحضور الاستثماري في الخليج والعالم العربي",
+                     S.of(context).whoUsWhiteSubTitle1,
                     style: TextStyles.textStyleNormalWhite,
-                    textDirection: TextDirection.rtl,
+                   
                   ),
                   SizedBox(height: 24),
                   Text(
-                    "شركة الحوار الاقتصادي — منصة سعودية رائدة في الإعلام المتخصص، التسويق الاستراتيجي، والإنتاج الفني. نعمل عبر:",
+                     S.of(context).whoUsGreenSubTitle1,
                     style: TextStyles.textStyleNormalGreen,
-                    textDirection: TextDirection.rtl,
+                    
                   ),
                   SizedBox(height: 24),
                   Padding(
                     padding: const EdgeInsets.only(right: 16.0),
                     child: Text(
-                      "-   قناة فضائية تبث عبر نايل سات على مدار الساعة.\n-   تطبيق إلكتروني للبث الحي + مكتبة مرئية حسب الطلب.\n-   منصات تواصل اجتماعي متكاملة.\n-   إنتاج محتوى مرئي احترافي.\n-   موقعنا الإلكتروني: بوابتك الشاملة للاقتصاد الرقمي 🌐",
+                       S.of(context).whoUsGreenSubTitle2,
                       style: TextStyles.textStyleNormalGreen,
-                      textDirection: TextDirection.rtl,
+                    
                     ),
                   ),
                   SizedBox(height: 40),
                   Text(
-                    "نقدّم عبر منصتنا الإلكترونية جميع خدمات التطبيق وأكثر في بيئة موحدة تتميز بـ:",
+                     S.of(context).whoUsGreenSubTitle3,
                     style: TextStyles.textStyleNormalGreen,
-                    textDirection: TextDirection.rtl,
+                    
                   ),
                   SizedBox(height: 28),
                   Padding(
                     padding: const EdgeInsets.only(right: 16.0),
                     child: Text(
-                      "-   مكتبة اقتصادية شاملة: وثائقيات، تقارير، وحلقات كاملة حسب الطلب (VOD)\n-   بث مباشر عالي الجودة للقنوات والفعاليات دون حاجة لتنزيل تطبيق.\n-   منصة تفاعلية للتواصل المباشر مع خبراء الاقتصاد ورجال الأعمال.\n-   حلول تسويقية مخصصة قابلة للطلب الفوري عبر واجهة موحدة.\n-   موقعنا ليس نسخة عن التطبيق.. بل هو المركز العصبي لخدماتنا الرقمية",
-
+                       S.of(context).whoUsGreenSubTitle4,
                       style: TextStyles.textStyleNormalGreen,
-                      textDirection: TextDirection.rtl,
+
                     ),
                   ),
                   SizedBox(height: 24),
                   Text(
-                    'لماذا تم اختيار اسم "الحوار الاقتصادي" للشركة ؟',
+                     S.of(context).whoUsGreenSubTitle5,
                     style: TextStyles.textStyleNormalWhiteWithUnderLine,
-                    textDirection: TextDirection.rtl,
+
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
                   SizedBox(height: 32),
 
                   Text(
-                    "معاً نُشكل منصة:",
+                     S.of(context).whoUsGreenSubTitle6,
                     style: TextStyles.textStyleNormalGreen,
-                    textDirection: TextDirection.rtl,
+
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
 
                   SizedBox(height: 32),
                   Text(
-                    "✓ تربط صُنّاع القرار بالجمهور عبر محتوى ذكي.\n✓ تحوّل المحتوى إلى محرّك استثماري يدعم رؤية السعودية 2030.\n✓ تُسلّط الضوء على التحولات التنموية في الخليج والعالم العربي.",
+                     S.of(context).whoUsGreenSubTitle7,
                     style: TextStyles.textStyleNormalGreen,
-                    textDirection: TextDirection.rtl,
+
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
 
                   SizedBox(height: 32),
                   Text(
-                    "التأسيس",
+                     S.of(context).whoUsGreenSubTitle8,
                     style: TextStyles.textStyleNormalWhiteWithUnderLine,
-                    textDirection: TextDirection.rtl,
+
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
                   SizedBox(height: 32),
                   Text(
-                    '"انطلقنا من حاجة ماسّة"',
+                     S.of(context).whoUsGreenSubTitle9,
                     style: TextStyles.textStyleNormalGreen,
-                    textDirection: TextDirection.rtl,
+
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
 
                   SizedBox(height: 12),
                   Text(
-                    'وُلدت شركتنا "شركة الحوار الاقتصادي " استجابةً لفراغ في السوق الإعلامي:',
+                     S.of(context).whoUsGreenSubTitle10,
                     style: TextStyles.textStyleNormalGreen,
-                    textDirection: TextDirection.rtl,
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
                   SizedBox(height: 24),
                   Padding(
                     padding: const EdgeInsets.only(right: 10.0),
                     child: Text(
-                      "-  غياب منصة متخصصة تواكب الأحداث الاقتصادية بلحظة بلحظة.\n-  حاجة المستثمرين لشريك إعلامي يفهم تحولات الاقتصاد الخليجي.\n-  ضرورة ربط الرؤى الوطنية (مثل رؤية 2030) بالجمهور عبر خطاب اقتصادي واضح.",
+ S.of(context).whoUsGreenSubTitle11,
                       style: TextStyles.textStyleNormalGreen,
-                      textDirection: TextDirection.rtl,
                       strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                     ),
                   ),
                   SizedBox(height: 24),
                   Text(
-                    '"لم نكن ننقل الخبر فحسب.. بل كنا جزءًا من صناعته"',
+                    S.of(context).whoUsGreenSubTitle12,
                     style: TextStyles.textStyleNormalGreen,
-                    textDirection: TextDirection.rtl,
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
                   SizedBox(height: 24),
                   Text(
-                    '"لماذا نكون شريككم الإعلامي الأول؟',
+                   S.of(context).whoUsGreenSubTitle13,
                     style: TextStyles.textStyleNormalWhiteWithUnderLine,
-                    textDirection: TextDirection.rtl,
                     strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                   ),
                   SizedBox(height: 24),
                   Padding(
                     padding: const EdgeInsets.only(right: 10.0),
                     child: Text(
-                      '-  خبرةً رياديةً في الإعلام الاقتصادي الحي والمُواكب لتحولات السوق.\n-  قناة فضائية + منصات رقمية متطورة تصل بكم إلى شريحة واسعة من المستثمرين والخبراء في الخليج والعالم العربي.\n-  حلولاً تسويقية وإعلامية متكاملة تُعزز حضور العلامات التجارية وتحقق الانتشار الخليجي.\n-  تغطيات احترافية للمؤتمرات، المعارض، ومبادرات القطاعين العام والخاص.\n-  محتوى مُحسَّن لمحركات البحث (SEO) لتعزيز الظهور الرقمي محلياً وخليجياً."',
+S.of(context).whoUsGreenSubTitle14,
                       style: TextStyles.textStyleNormalGreen,
-                      textDirection: TextDirection.rtl,
+              
                       strutStyle: StrutStyle(height: 1.5, leading: 0.5),
                     ),
                   ),
@@ -179,7 +175,7 @@ class WhoUsView extends StatelessWidget {
                         );
                       },
                       child: Text(
-                        "المزيد",
+                         S.of(context).whoUsGreenButton,
                         style: TextStyles.textStyleNormalWhite,
                       ),
                     ),

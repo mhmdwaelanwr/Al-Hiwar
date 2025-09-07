@@ -38,8 +38,8 @@ class AssetImages {
   static final Widget tvIcon = Image.asset("assets/images/tvIcon.png");
   static final Widget whatsapp = Image.asset(
     'assets/images/whatsapp.png',
-    height: AppDimensions.iconSize(),
-    width: AppDimensions.iconSize(),
+    height: AppDimensions.imageWidth(0.15),
+    width: AppDimensions.imageWidth(0.15),
   );
   static final Widget logoWnameSmall = Image.asset(
     'assets/images/logoWnameSmall.png',
@@ -57,7 +57,8 @@ class AssetImages {
   );
   static final Widget instagram = Image.asset(
     'assets/images/instagram.png',
-
+  height: AppDimensions.imageWidth(0.08),
+    width: AppDimensions.imageWidth(0.08),
     fit: BoxFit.fill,
   );
 

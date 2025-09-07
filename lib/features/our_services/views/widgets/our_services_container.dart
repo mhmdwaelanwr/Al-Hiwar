@@ -1,6 +1,6 @@
-
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
+import 'package:bookly/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class OurServicesWidget extends StatelessWidget {
@@ -29,36 +29,26 @@ class OurServicesWidget extends StatelessWidget {
 
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.end,
+
         children: [
           Icon(icon, color: kPrimaryColor, size: 50),
           Expanded(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
-                  title,
-                  style: TextStyles.textStyleNormalWhite,
-                  textDirection: TextDirection.rtl,
-                ),
-                Text(
-                  description,
-                  style: TextStyles.textStyleSmallSilver,
-                  textDirection: TextDirection.rtl,
-                ),
+                Text(title, style: TextStyles.textStyleNormalWhite),
+                Text(description, style: TextStyles.textStyleSmallSilver),
                 SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
                     Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (co) => viewToDetails),
-                );
+                      context,
+                      MaterialPageRoute(builder: (co) => viewToDetails),
+                    );
                   },
                   child: Text(
-                    "عرض التفاصيل",
+                    S.of(context).ourServicesContainerTextButton,
                     style: TextStyles.textStyleNormalGreenWithLine,
-                    textDirection: TextDirection.rtl,
                   ),
                 ),
               ],

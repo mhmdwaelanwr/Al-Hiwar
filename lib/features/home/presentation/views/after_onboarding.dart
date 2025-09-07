@@ -1,9 +1,9 @@
 import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
+import 'package:bookly/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 
 class AfterOnBoardingBody extends StatelessWidget {
    AfterOnBoardingBody({super.key});
@@ -27,19 +27,19 @@ class AfterOnBoardingBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
-                    "شركاؤك الإعلاميون في عالم الاستثمار والاقتصاد:",
+                    S.of(context).afterONBoardingTitle,
                     style: TextStyles.textStyleTitleGreen,
                     textDirection: TextDirection.rtl,
                   ),
                   SizedBox(height: 24),
                   Text(
-                    "محتوى اقتصادي مؤثّر، وتسويق احترافي يعزّز حضورك الاستثماري ، وقناة رقمية رائدة تُسلّط الضوء على قصص النجاح، وتبني حضورك الاستثماري في الخليج العربي",
+                    S.of(context).afterONBoardingSubTitle1,
                     style: TextStyles.textStyleNormalWhite,
                     textDirection: TextDirection.rtl,
                   ),
                   SizedBox(height: 12),
                   Text(
-                    "في شركة الحوار الاقتصادي نحمل رسالتك الاستثمارية إلى الجمهور من خلال قناة فضائية، منصّات رقمية، وتغطيات اعلامية وتسويقية متكاملة. سواء كنت تبحث عن تسويق احترافي، ظهور إعلامي قوي، أو شراكات استراتيجية، نضع بين يديك الأدوات التي تصنع التأثير وتدفع أعمالك نحو الحضور والانتشار الخليج.",
+                    S.of(context).afterONBoardingSubTitle2,
                     style: TextStyles.textStyleNormalWhite,
                     textDirection: TextDirection.rtl,
                   ),
@@ -57,7 +57,7 @@ class AfterOnBoardingBody extends StatelessWidget {
 
                       onPressed: ()=> _launchUrl(youtubeUrl),
                       child: Text(
-                        "انضم للبث المباشر الان",
+                        S.of(context).afterONBoardingbutton,
                         style: TextStyles.textStyleNormalWhite,
                       ),
                     ),
