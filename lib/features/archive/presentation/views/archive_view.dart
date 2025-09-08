@@ -2,7 +2,6 @@ import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
 import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
-import 'package:bookly/core/utils/assets_data.dart';
 import 'package:bookly/features/archive/presentation/view_models/archive_model.dart';
 import 'package:bookly/features/archive/presentation/views/widgets/archive_widgets.dart';
 import 'package:bookly/generated/l10n.dart';

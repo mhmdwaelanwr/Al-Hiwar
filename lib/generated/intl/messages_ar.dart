@@ -41,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "afterONBoardingbutton": MessageLookupByLibrary.simpleMessage(
       "انضم للبث المباشر الان",
     ),
+    "applicationLanguages": MessageLookupByLibrary.simpleMessage("عربي"),
     "archiveViewSubTitle": MessageLookupByLibrary.simpleMessage(
       ".ستجد كل ماهو مفيد من مواضيع وشروحات",
     ),

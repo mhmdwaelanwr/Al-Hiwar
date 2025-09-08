@@ -39,9 +39,9 @@ dependencies:
   flutter_svg: ^2.2.0
   smooth_page_indicator: ^1.2.1
   url_launcher: ^6.3.2
-  video_player: ^2.8.6
-  device_preview: ^1.2.0
 
+  device_preview: ^1.2.0
+  shared_preferences: ^2.2.2  
 dev_dependencies:
   flutter_test:
     sdk: flutter

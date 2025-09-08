@@ -1,7 +1,7 @@
 import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
-import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
+import 'package:bookly/core/common/special_scaffold_with_back_arrow.dart';
 import 'package:bookly/core/utils/assets_data.dart';
 import 'package:bookly/features/whoUs/presentation/views/widget/more_widget.dart';
 import 'package:bookly/generated/l10n.dart';
@@ -49,7 +49,7 @@ class _MoreWhoUsViewState extends State<MoreWhoUsView> {
       ),
     ),
   ];
-    return SpecialScaffoldWithBackground(
+    return SpecialScaffoldWithBackgroundWithBackArrow(
       backgroundImage: AssetImages.background1,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,

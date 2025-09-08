@@ -11,11 +11,18 @@ import 'package:bookly/features/our_services/views/our_services_view.dart';
 
 import 'package:bookly/features/whoUs/presentation/views/who_us_view.dart';
 import 'package:bookly/generated/l10n.dart';
+import 'package:bookly/main.dart';
+import 'package:bookly/services/localization_shared_prefrance.dart';
 import 'package:flutter/material.dart';
 
-class SpecialDrawer extends StatelessWidget {
+class SpecialDrawer extends StatefulWidget {
   const SpecialDrawer({super.key});
 
+  @override
+  State<SpecialDrawer> createState() => _SpecialDrawerState();
+}
+
+class _SpecialDrawerState extends State<SpecialDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -68,6 +75,32 @@ class SpecialDrawer extends StatelessWidget {
             text: S.of(context).drawerOurContactUsScreen,
             leadingIcon: Icons.call,
             widgetViewToGo: ContactUsView(),
+          ),
+          Spacer(),
+          ListTile(
+            contentPadding: EdgeInsets.symmetric(horizontal: 36, vertical: 16),
+            tileColor: kgrayColor,
+            leading: Switch(
+             
+             activeTrackColor: kPrimaryColor,
+              value: Bookly.localeNotifier.value.languageCode == 'ar',
+              onChanged: (val) async{
+ final newLocale = val ? const Locale('ar') : const Locale('en');
+
+    // تحديث التطبيق
+    Bookly.localeNotifier.value = newLocale;
+
+    // حفظ الاختيار
+    await LocaleManager.saveLocale(newLocale);
+                
+              },
+            ),
+            title: Text(
+              S.of(context).applicationLanguages,
+              style: TextStyles.textStyleNormalWhite,
+              textDirection: TextDirection.rtl,
+            ),
+            onTap: () {},
           ),
         ],
       ),

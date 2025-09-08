@@ -1,4 +1,3 @@
-import 'package:bookly/generated/l10n.dart';
 
 class BoardingModel {
   final String title;

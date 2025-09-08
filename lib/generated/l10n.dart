@@ -54,6 +54,16 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `English`
+  String get applicationLanguages {
+    return Intl.message(
+      'English',
+      name: 'applicationLanguages',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `An economic platform that elevates investors' thinking. We produce dynamic economic media that monitors market movements moment by moment and highlights success stories and promising investment initiatives in the Gulf and the Arab world.`
   String get onBoardingTitle1 {
     return Intl.message(

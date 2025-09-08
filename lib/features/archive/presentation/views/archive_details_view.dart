@@ -1,6 +1,6 @@
 import 'package:bookly/constants/constant_app_dimentions.dart';
 import 'package:bookly/constants/constant_text_style.dart';
-import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
+import 'package:bookly/core/common/special_scaffold_with_back_arrow.dart';
 
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class ArchiveDetailsView extends StatelessWidget {
   final archiveItems;
   @override
   Widget build(BuildContext context) {
-    return SpecialScaffoldWithBackground(
+    return SpecialScaffoldWithBackgroundWithBackArrow(
       body: Column(
         children: [
           SizedBox(

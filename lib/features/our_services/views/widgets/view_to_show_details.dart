@@ -1,6 +1,6 @@
 import 'package:bookly/constants/constant_colors.dart';
 import 'package:bookly/constants/constant_text_style.dart';
-import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
+import 'package:bookly/core/common/special_scaffold_with_back_arrow.dart';
 import 'package:bookly/core/utils/assets_data.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +10,7 @@ final String title;
 final String description;
   @override
   Widget build(BuildContext context) {
-    return SpecialScaffoldWithBackground(
+    return SpecialScaffoldWithBackgroundWithBackArrow(
       backgroundImage: AssetImages.background2,
       body: Column(
         children: [
