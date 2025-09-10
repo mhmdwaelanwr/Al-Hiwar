@@ -628,6 +628,411 @@ class S {
       args: [],
     );
   }
+
+  /// `Conditions`
+  String get conditionsTitle {
+    return Intl.message(
+      'Conditions',
+      name: 'conditionsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms and Conditions of the Economic Dialogue Company App`
+  String get conditionsTitle0 {
+    return Intl.message(
+      'Terms and Conditions of the Economic Dialogue Company App',
+      name: 'conditionsTitle0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to the Economic Dialogue Company App. By using this app, you agree to abide by the following terms and conditions, which aim to protect the rights of both the user and the company, ensuring a safe and beneficial experience for everyone.`
+  String get conditionsSubTitle0 {
+    return Intl.message(
+      'Welcome to the Economic Dialogue Company App. By using this app, you agree to abide by the following terms and conditions, which aim to protect the rights of both the user and the company, ensuring a safe and beneficial experience for everyone.',
+      name: 'conditionsSubTitle0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Use of the App`
+  String get conditionsTitle1 {
+    return Intl.message(
+      '1. Use of the App',
+      name: 'conditionsTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The app is dedicated to showcasing and broadcasting programs, videos, and economic reports of the Economic Dialogue Company.\n- Misuse of the app is prohibited, including attempts of hacking, content manipulation, or using it for illegal purposes.\n- Users commit to using the app for personal and non-commercial purposes only, unless prior written permission is obtained from the company.`
+  String get conditionsSubTitle1 {
+    return Intl.message(
+      '- The app is dedicated to showcasing and broadcasting programs, videos, and economic reports of the Economic Dialogue Company.\n- Misuse of the app is prohibited, including attempts of hacking, content manipulation, or using it for illegal purposes.\n- Users commit to using the app for personal and non-commercial purposes only, unless prior written permission is obtained from the company.',
+      name: 'conditionsSubTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Intellectual Property Rights`
+  String get conditionsTitle2 {
+    return Intl.message(
+      '2. Intellectual Property Rights',
+      name: 'conditionsTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- All rights are reserved to the Economic Dialogue Company, including programs, videos, texts, designs, trademarks, and logos.\n- No content from the app may be copied, republished, distributed, or modified by any means without prior written consent from the company.\n- The company’s trademark or logo must not be used in any content or promotional material without official approval.`
+  String get conditionsSubTitle2 {
+    return Intl.message(
+      '- All rights are reserved to the Economic Dialogue Company, including programs, videos, texts, designs, trademarks, and logos.\n- No content from the app may be copied, republished, distributed, or modified by any means without prior written consent from the company.\n- The company’s trademark or logo must not be used in any content or promotional material without official approval.',
+      name: 'conditionsSubTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Media Content Protection`
+  String get conditionsTitle3 {
+    return Intl.message(
+      '3. Media Content Protection',
+      name: 'conditionsTitle3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company reserves full rights to protect its programs and media content against any unauthorized copying or broadcasting.\n- Any attempt to use screen recording techniques or re-upload content is considered a direct violation of intellectual property rights.\n- The company reserves the right to take legal action against any party or individual violating its intellectual property rights.`
+  String get conditionsSubTitle3 {
+    return Intl.message(
+      '- The company reserves full rights to protect its programs and media content against any unauthorized copying or broadcasting.\n- Any attempt to use screen recording techniques or re-upload content is considered a direct violation of intellectual property rights.\n- The company reserves the right to take legal action against any party or individual violating its intellectual property rights.',
+      name: 'conditionsSubTitle3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. Content and Information`
+  String get conditionsTitle4 {
+    return Intl.message(
+      '4. Content and Information',
+      name: 'conditionsTitle4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company strives to provide accurate and reliable content based on trusted sources.\n- The company bears no responsibility for any investment or business decisions made by the user based on the information provided in the app.\n- The available content is intended for informational and educational purposes only and does not constitute direct financial advice.`
+  String get conditionsSubTitle4 {
+    return Intl.message(
+      '- The company strives to provide accurate and reliable content based on trusted sources.\n- The company bears no responsibility for any investment or business decisions made by the user based on the information provided in the app.\n- The available content is intended for informational and educational purposes only and does not constitute direct financial advice.',
+      name: 'conditionsSubTitle4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `5. Accounts and Subscriptions`
+  String get conditionsTitle5 {
+    return Intl.message(
+      '5. Accounts and Subscriptions',
+      name: 'conditionsTitle5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The user must maintain the confidentiality of their login credentials and not share them with any third party.\n- The company reserves the right to suspend or delete any account that violates the terms or misuses the app.\n- In case of paid services or subscriptions, the user is required to settle fees within the specified deadlines.`
+  String get conditionsSubTitle5 {
+    return Intl.message(
+      '- The user must maintain the confidentiality of their login credentials and not share them with any third party.\n- The company reserves the right to suspend or delete any account that violates the terms or misuses the app.\n- In case of paid services or subscriptions, the user is required to settle fees within the specified deadlines.',
+      name: 'conditionsSubTitle5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `6. Data Privacy`
+  String get conditionsTitle6 {
+    return Intl.message(
+      '6. Data Privacy',
+      name: 'conditionsTitle6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company is committed to protecting user data and not sharing it with any third party except in compliance with local laws or upon an official request from authorities.\n- Data is used to improve service quality and to send notifications about new content.\n- Users have the right to request modification or deletion of their personal data by contacting the app administration.`
+  String get conditionsSubTitle6 {
+    return Intl.message(
+      '- The company is committed to protecting user data and not sharing it with any third party except in compliance with local laws or upon an official request from authorities.\n- Data is used to improve service quality and to send notifications about new content.\n- Users have the right to request modification or deletion of their personal data by contacting the app administration.',
+      name: 'conditionsSubTitle6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `7. Limitation of Liability`
+  String get conditionsTitle7 {
+    return Intl.message(
+      '7. Limitation of Liability',
+      name: 'conditionsTitle7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company is not liable for any direct or indirect damages that may result from using the app or relying on its content.\n- The company does not guarantee that the app will be error-free or free from technical interruptions at all times.\n- The user alone is responsible for decisions made based on the information or content provided.`
+  String get conditionsSubTitle7 {
+    return Intl.message(
+      '- The company is not liable for any direct or indirect damages that may result from using the app or relying on its content.\n- The company does not guarantee that the app will be error-free or free from technical interruptions at all times.\n- The user alone is responsible for decisions made based on the information or content provided.',
+      name: 'conditionsSubTitle7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `8. Protection of Company Rights`
+  String get conditionsTitle8 {
+    return Intl.message(
+      '8. Protection of Company Rights',
+      name: 'conditionsTitle8',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company reserves the full right to take any legal or technical action against any party that violates its intellectual or commercial rights.\n- The use of the company’s name or logo in any content that could harm its reputation or professional standing is prohibited.\n- All parties must respect the company’s reputation and legal status, subject to legal accountability.`
+  String get conditionsSubTitle8 {
+    return Intl.message(
+      '- The company reserves the full right to take any legal or technical action against any party that violates its intellectual or commercial rights.\n- The use of the company’s name or logo in any content that could harm its reputation or professional standing is prohibited.\n- All parties must respect the company’s reputation and legal status, subject to legal accountability.',
+      name: 'conditionsSubTitle8',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `9. Amendments to the Terms and Conditions`
+  String get conditionsTitle9 {
+    return Intl.message(
+      '9. Amendments to the Terms and Conditions',
+      name: 'conditionsTitle9',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company reserves the right to amend or update these terms at any time, with users being notified of any significant changes.\n- Continued use of the app after publishing amendments constitutes implicit acceptance of the updated version.`
+  String get conditionsSubTitle9 {
+    return Intl.message(
+      '- The company reserves the right to amend or update these terms at any time, with users being notified of any significant changes.\n- Continued use of the app after publishing amendments constitutes implicit acceptance of the updated version.',
+      name: 'conditionsSubTitle9',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `10. Governing Law`
+  String get conditionsTitle10 {
+    return Intl.message(
+      '10. Governing Law',
+      name: 'conditionsTitle10',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- These terms and conditions are governed by the laws of the Kingdom of Saudi Arabia.\n- Any disputes arising shall be addressed before the competent judicial authorities within the Kingdom.`
+  String get conditionsSubTitle10 {
+    return Intl.message(
+      '- These terms and conditions are governed by the laws of the Kingdom of Saudi Arabia.\n- Any disputes arising shall be addressed before the competent judicial authorities within the Kingdom.',
+      name: 'conditionsSubTitle10',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `🔒 Privacy Policy for Al Hiwar Al Iqtisadi Website and Application`
+  String get privcyTitle0 {
+    return Intl.message(
+      '🔒 Privacy Policy for Al Hiwar Al Iqtisadi Website and Application',
+      name: 'privcyTitle0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Al Hiwar Al Iqtisadi gives utmost importance to protecting the privacy of users of its website and application. This policy aims to clarify how personal data is collected, used, and protected in accordance with applicable laws.`
+  String get privcySubTitle0 {
+    return Intl.message(
+      'Al Hiwar Al Iqtisadi gives utmost importance to protecting the privacy of users of its website and application. This policy aims to clarify how personal data is collected, used, and protected in accordance with applicable laws.',
+      name: 'privcySubTitle0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Data Collected`
+  String get privcyTitle1 {
+    return Intl.message(
+      '1. Data Collected',
+      name: 'privcyTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- We may collect personal data when registering or using the services, such as: name, email, phone number.\n- Technical data may be collected such as: device type, operating system, IP address, and usage history to improve performance.\n- Additional data may be collected when contacting customer service or participating in events or surveys.`
+  String get privcySubTitle1 {
+    return Intl.message(
+      '- We may collect personal data when registering or using the services, such as: name, email, phone number.\n- Technical data may be collected such as: device type, operating system, IP address, and usage history to improve performance.\n- Additional data may be collected when contacting customer service or participating in events or surveys.',
+      name: 'privcySubTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. How Data is Used`
+  String get privcyTitle2 {
+    return Intl.message(
+      '2. How Data is Used',
+      name: 'privcyTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- Data is used to provide and improve the services offered through the website and application.\n- Sending notifications or alerts related to new content or economic events.\n- Providing technical support and customer service.\n- Analyzing user behavior to improve user experience and develop content.`
+  String get privcySubTitle2 {
+    return Intl.message(
+      '- Data is used to provide and improve the services offered through the website and application.\n- Sending notifications or alerts related to new content or economic events.\n- Providing technical support and customer service.\n- Analyzing user behavior to improve user experience and develop content.',
+      name: 'privcySubTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Data Protection`
+  String get privcyTitle3 {
+    return Intl.message(
+      '3. Data Protection',
+      name: 'privcyTitle3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company is committed to using the latest technical and administrative means to protect users’ data from unauthorized access, modification, or disclosure.\n- Secure protocols (HTTPS) and encryption technologies are used to protect sensitive data.\n- The company is not responsible for any breach resulting from user negligence in maintaining the confidentiality of their data.`
+  String get privcySubTitle3 {
+    return Intl.message(
+      '- The company is committed to using the latest technical and administrative means to protect users’ data from unauthorized access, modification, or disclosure.\n- Secure protocols (HTTPS) and encryption technologies are used to protect sensitive data.\n- The company is not responsible for any breach resulting from user negligence in maintaining the confidentiality of their data.',
+      name: 'privcySubTitle3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. Data Sharing with Third Parties`
+  String get privcyTitle4 {
+    return Intl.message(
+      '4. Data Sharing with Third Parties',
+      name: 'privcyTitle4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company does not sell or share user data with any third party for marketing purposes.\n- Data may only be shared in the following cases:\n– Compliance with local laws or an official request from competent authorities.\n- Protecting the company’s rights or property or ensuring users’ safety.\n- Engaging certified service providers to support technical operations (with full commitment to data protection).`
+  String get privcySubTitle4 {
+    return Intl.message(
+      '- The company does not sell or share user data with any third party for marketing purposes.\n- Data may only be shared in the following cases:\n– Compliance with local laws or an official request from competent authorities.\n- Protecting the company’s rights or property or ensuring users’ safety.\n- Engaging certified service providers to support technical operations (with full commitment to data protection).',
+      name: 'privcySubTitle4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `5. User Rights`
+  String get privcyTitle5 {
+    return Intl.message(
+      '5. User Rights',
+      name: 'privcyTitle5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The user has the right to request access to their personal data stored with us.\n- The user has the right to request modification or correction of their personal data at any time.\n- The user has the right to request deletion of their data or cancel their account by contacting the website/application administration.`
+  String get privcySubTitle5 {
+    return Intl.message(
+      '- The user has the right to request access to their personal data stored with us.\n- The user has the right to request modification or correction of their personal data at any time.\n- The user has the right to request deletion of their data or cancel their account by contacting the website/application administration.',
+      name: 'privcySubTitle5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `6. Cookies`
+  String get privcyTitle6 {
+    return Intl.message('6. Cookies', name: 'privcyTitle6', desc: '', args: []);
+  }
+
+  /// `- The website and application may use cookies to enhance browsing experience and customize content.\n- Users can adjust their browser settings to block cookies, noting that this may affect some functions.`
+  String get privcySubTitle6 {
+    return Intl.message(
+      '- The website and application may use cookies to enhance browsing experience and customize content.\n- Users can adjust their browser settings to block cookies, noting that this may affect some functions.',
+      name: 'privcySubTitle6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `7. Changes to the Privacy Policy`
+  String get privcyTitle7 {
+    return Intl.message(
+      '7. Changes to the Privacy Policy',
+      name: 'privcyTitle7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- The company reserves the right to modify or update the privacy policy from time to time.\n- Users will be notified of any significant changes through the website or application.\n- Continued use of the services after publishing the changes constitutes implicit acceptance of the updated version.`
+  String get privcySubTitle7 {
+    return Intl.message(
+      '- The company reserves the right to modify or update the privacy policy from time to time.\n- Users will be notified of any significant changes through the website or application.\n- Continued use of the services after publishing the changes constitutes implicit acceptance of the updated version.',
+      name: 'privcySubTitle7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `8. Contact Us`
+  String get privcyTitle8 {
+    return Intl.message(
+      '8. Contact Us',
+      name: 'privcyTitle8',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- For inquiries or requests related to privacy, users can contact the company’s management via email or the 'Contact Us' page.`
+  String get privcySubTitle8 {
+    return Intl.message(
+      '- For inquiries or requests related to privacy, users can contact the company’s management via email or the \'Contact Us\' page.',
+      name: 'privcySubTitle8',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

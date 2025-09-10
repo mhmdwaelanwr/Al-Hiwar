@@ -46,6 +46,73 @@ class MessageLookup extends MessageLookupByLibrary {
       ".ستجد كل ماهو مفيد من مواضيع وشروحات",
     ),
     "archiveViewTitle": MessageLookupByLibrary.simpleMessage("مدونة الحوار"),
+    "conditionsSubTitle0": MessageLookupByLibrary.simpleMessage(
+      "مرحبًا بك في تطبيق شركة الحوار الاقتصادي. باستخدامك لهذا التطبيق، فإنك توافق على الالتزام بالشروط والأحكام التالية، والتي تهدف إلى حماية حقوق المستخدم والشركة وضمان تجربة آمنة ومفيدة للجميع.",
+    ),
+    "conditionsSubTitle1": MessageLookupByLibrary.simpleMessage(
+      "- التطبيق مخصص لعرض وبث البرامج والفيديوهات والتقارير الاقتصادية الخاصة بشركة الحوار الاقتصادي.\n- يُمنع إساءة استخدام التطبيق، بما في ذلك محاولات الاختراق، التلاعب بالمحتوى، أو استخدامه لأغراض غير قانونية.\n- يلتزم المستخدم باستخدام التطبيق للأغراض الشخصية وغير التجارية فقط، ما لم يتم الحصول على إذن كتابي من الشركة.",
+    ),
+    "conditionsSubTitle10": MessageLookupByLibrary.simpleMessage(
+      "- تخضع هذه الشروط والأحكام لقوانين المملكة العربية السعودية.\n- أي نزاع ينشأ يتم النظر فيه أمام الجهات القضائية المختصة داخل المملكة.",
+    ),
+    "conditionsSubTitle2": MessageLookupByLibrary.simpleMessage(
+      "- جميع الحقوق محفوظة لشركة الحوار الاقتصادي، بما يشمل البرامج، الفيديوهات، النصوص، التصاميم، العلامات التجارية، والشعارات.\n- لا يجوز نسخ أو إعادة نشر أو توزيع أو تعديل أي محتوى من التطبيق بأي وسيلة كانت دون إذن خطي مسبق من الشركة.\n- يحظر استخدام العلامة التجارية أو الشعار الخاص بالشركة في أي محتوى أو مادة دعائية دون موافقة رسمية.",
+    ),
+    "conditionsSubTitle3": MessageLookupByLibrary.simpleMessage(
+      "- تحتفظ الشركة بحقها الكامل في حماية برامجها ومحتواها الإعلامي ضد أي نسخ أو بث غير مرخص.\n- أي محاولة لاستخدام تقنيات تسجيل الشاشة أو إعادة رفع المحتوى تعتبر انتهاكًا صريحًا لحقوق الملكية الفكرية.\n- تحتفظ الشركة بحقها في اتخاذ الإجراءات القانونية ضد أي جهة أو فرد ينتهك حقوقها الفكرية.",
+    ),
+    "conditionsSubTitle4": MessageLookupByLibrary.simpleMessage(
+      "- تعمل الشركة على تقديم محتوى دقيق وموثوق مبني على مصادر معتمدة.\n- لا تتحمل الشركة أي مسؤولية عن قرارات استثمارية أو تجارية يتخذها المستخدم اعتمادًا على المعلومات المقدمة في التطبيق.\n- المحتوى المتوفر مخصص للأغراض الإعلامية والتثقيفية فقط، ولا يُعد استشارة مالية مباشرة.",
+    ),
+    "conditionsSubTitle5": MessageLookupByLibrary.simpleMessage(
+      "- يلتزم المستخدم بالحفاظ على سرية بيانات تسجيل الدخول الخاصة به وعدم مشاركتها مع أي طرف ثالث.\n- تحتفظ الشركة بحق إيقاف أو حذف أي حساب يخالف الشروط أو يسئ استخدام التطبيق.\n- في حال وجود خدمات مدفوعة أو اشتراكات، يلتزم المستخدم بسداد الرسوم في مواعيدها المحددة.",
+    ),
+    "conditionsSubTitle6": MessageLookupByLibrary.simpleMessage(
+      "- تلتزم الشركة بحماية بيانات المستخدمين وعدم مشاركتها مع أي طرف ثالث إلا في حال الامتثال للقوانين المحلية أو بطلب رسمي من السلطات.\n- تُستخدم البيانات لأغراض تحسين جودة الخدمة وإرسال إشعارات بالمحتوى الجديد.\n- يحق للمستخدم طلب تعديل أو حذف بياناته الشخصية عبر التواصل مع إدارة التطبيق.",
+    ),
+    "conditionsSubTitle7": MessageLookupByLibrary.simpleMessage(
+      "- لا تتحمل الشركة أي أضرار مباشرة أو غير مباشرة قد تنشأ عن استخدام التطبيق أو الاعتماد على محتواه.\n- لا تضمن الشركة أن يكون التطبيق خاليًا من الأخطاء أو الانقطاعات التقنية في جميع الأوقات.\n- المستخدم وحده يتحمل مسؤولية قراراته المبنية على المعلومات أو المحتوى المتاح.",
+    ),
+    "conditionsSubTitle8": MessageLookupByLibrary.simpleMessage(
+      "- تحتفظ الشركة بحقها الكامل في اتخاذ أي إجراء قانوني أو تقني ضد أي جهة تنتهك حقوقها الفكرية أو التجارية.\n- يُمنع استخدام اسم أو شعار الشركة في أي محتوى قد يسيء لسمعتها أو مكانتها المهنية.\n- تلتزم جميع الأطراف باحترام سمعة الشركة وكيانها القانوني تحت طائلة المسؤولية القانونية.",
+    ),
+    "conditionsSubTitle9": MessageLookupByLibrary.simpleMessage(
+      "- تحتفظ الشركة بحق تعديل أو تحديث هذه الشروط في أي وقت، على أن يتم إشعار المستخدمين بأي تغييرات جوهرية.\n- يُعتبر استمرار استخدام التطبيق بعد نشر التعديلات موافقة ضمنية على النسخة المحدّثة.",
+    ),
+    "conditionsTitle": MessageLookupByLibrary.simpleMessage("الاحكام"),
+    "conditionsTitle0": MessageLookupByLibrary.simpleMessage(
+      "الشروط والأحكام الخاصة بتطبيق شركة الحوار الاقتصادي",
+    ),
+    "conditionsTitle1": MessageLookupByLibrary.simpleMessage(
+      "1. استخدام التطبيق",
+    ),
+    "conditionsTitle10": MessageLookupByLibrary.simpleMessage(
+      "10. القانون المطبق",
+    ),
+    "conditionsTitle2": MessageLookupByLibrary.simpleMessage(
+      "2. حقوق الملكية الفكرية",
+    ),
+    "conditionsTitle3": MessageLookupByLibrary.simpleMessage(
+      "3. حماية المحتوى الإعلامي",
+    ),
+    "conditionsTitle4": MessageLookupByLibrary.simpleMessage(
+      "4. المحتوى والمعلومات",
+    ),
+    "conditionsTitle5": MessageLookupByLibrary.simpleMessage(
+      "5. الحسابات والاشتراكات",
+    ),
+    "conditionsTitle6": MessageLookupByLibrary.simpleMessage(
+      "6. خصوصية البيانات",
+    ),
+    "conditionsTitle7": MessageLookupByLibrary.simpleMessage(
+      "7. حدود المسؤولية",
+    ),
+    "conditionsTitle8": MessageLookupByLibrary.simpleMessage(
+      "8. حماية حقوق الشركة",
+    ),
+    "conditionsTitle9": MessageLookupByLibrary.simpleMessage(
+      "9. التعديلات على الشروط والأحكام",
+    ),
     "drawerMainScreen": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "drawerMainTitle": MessageLookupByLibrary.simpleMessage("الحوار الاقتصادي"),
     "drawerOurContactUsScreen": MessageLookupByLibrary.simpleMessage(
@@ -117,6 +184,54 @@ class MessageLookup extends MessageLookupByLibrary {
     "ourServicesPart2Title": MessageLookupByLibrary.simpleMessage(
       " قسم التسويق والدعايا والإعلان",
     ),
+    "privcySubTitle0": MessageLookupByLibrary.simpleMessage(
+      "تولي شركة الحوار الاقتصادي أهمية قصوى لحماية خصوصية مستخدمي موقعها وتطبيقها. تهدف هذه السياسة إلى توضيح كيفية جمع البيانات الشخصية واستخدامها وحمايتها بما يتوافق مع القوانين المعمول بها.",
+    ),
+    "privcySubTitle1": MessageLookupByLibrary.simpleMessage(
+      "- قد نقوم بجمع بيانات شخصية عند التسجيل أو استخدام الخدمات، مثل: الاسم، البريد الإلكتروني، رقم الهاتف.\n- قد يتم جمع بيانات تقنية مثل: نوع الجهاز، نظام التشغيل، عنوان IP، وسجل الاستخدام لتحسين الأداء.\n- قد يتم جمع بيانات إضافية عند التواصل مع خدمة العملاء أو المشاركة في فعاليات أو استبيانات.",
+    ),
+    "privcySubTitle2": MessageLookupByLibrary.simpleMessage(
+      "- تُستخدم البيانات لتقديم وتحسين الخدمات المقدمة عبر الموقع والتطبيق.\n- إرسال إشعارات أو تنبيهات متعلقة بالمحتوى الجديد أو الفعاليات الاقتصادية.\n- توفير الدعم الفني وخدمة العملاء.\n- تحليل سلوك المستخدمين بهدف تحسين تجربة الاستخدام وتطوير المحتوى.",
+    ),
+    "privcySubTitle3": MessageLookupByLibrary.simpleMessage(
+      "- تلتزم الشركة باستخدام أحدث الوسائل التقنية والإدارية لحماية بيانات المستخدمين من الوصول غير المصرح به أو التعديل أو الإفصاح.\n- يتم استخدام بروتوكولات آمنة (HTTPS) وتقنيات التشفير لحماية البيانات الحساسة.\n- لا تتحمل الشركة مسؤولية أي خرق ناتج عن إهمال المستخدم في الحفاظ على سرية بياناته.",
+    ),
+    "privcySubTitle4": MessageLookupByLibrary.simpleMessage(
+      "- لا تقوم الشركة ببيع أو مشاركة بيانات المستخدمين مع أي طرف ثالث لأغراض تسويقية.\n- قد تتم مشاركة البيانات فقط في الحالات التالية:\n– الامتثال للقوانين المحلية أو طلب رسمي من السلطات المختصة.\n- حماية حقوق الشركة أو ممتلكاتها أو ضمان سلامة المستخدمين.\n- الاستعانة بمقدمي خدمات معتمدين لدعم العمليات التقنية (مع الالتزام التام بحماية البيانات).",
+    ),
+    "privcySubTitle5": MessageLookupByLibrary.simpleMessage(
+      "- يحق للمستخدم طلب الاطلاع على بياناته الشخصية المخزنة لدينا.\n- يحق للمستخدم طلب تعديل أو تصحيح بياناته الشخصية في أي وقت.\n- يحق للمستخدم طلب حذف بياناته أو إلغاء حسابه عبر التواصل مع إدارة الموقع/التطبيق.",
+    ),
+    "privcySubTitle6": MessageLookupByLibrary.simpleMessage(
+      "- قد يستخدم الموقع والتطبيق ملفات تعريف الارتباط لتحسين تجربة التصفح وتخصيص المحتوى.\n- يمكن للمستخدم ضبط إعدادات المتصفح لحظر ملفات تعريف الارتباط، مع العلم أن ذلك قد يؤثر على بعض الوظائف.",
+    ),
+    "privcySubTitle7": MessageLookupByLibrary.simpleMessage(
+      "- تحتفظ الشركة بحق تعديل أو تحديث سياسة الخصوصية من وقت لآخر.\n- يتم إشعار المستخدمين بأي تغييرات جوهرية عبر الموقع أو التطبيق.\n- يُعتبر استمرار استخدام الخدمات بعد نشر التعديلات موافقة ضمنية على النسخة المحدّثة.",
+    ),
+    "privcySubTitle8": MessageLookupByLibrary.simpleMessage(
+      "- للاستفسار أو تقديم طلبات متعلقة بالخصوصية، يمكن للمستخدم التواصل مع إدارة الشركة عبر البريد الإلكتروني أو صفحة \'اتصل بنا\'.",
+    ),
+    "privcyTitle0": MessageLookupByLibrary.simpleMessage(
+      "🔒 سياسة الخصوصية لموقع وتطبيق شركة الحوار الاقتصادي",
+    ),
+    "privcyTitle1": MessageLookupByLibrary.simpleMessage(
+      "1. البيانات التي يتم جمعها",
+    ),
+    "privcyTitle2": MessageLookupByLibrary.simpleMessage(
+      "2. كيفية استخدام البيانات",
+    ),
+    "privcyTitle3": MessageLookupByLibrary.simpleMessage("3. حماية البيانات"),
+    "privcyTitle4": MessageLookupByLibrary.simpleMessage(
+      "4. مشاركة البيانات مع أطراف ثالثة",
+    ),
+    "privcyTitle5": MessageLookupByLibrary.simpleMessage("5. حقوق المستخدم"),
+    "privcyTitle6": MessageLookupByLibrary.simpleMessage(
+      "6. ملفات تعريف الارتباط (Cookies)",
+    ),
+    "privcyTitle7": MessageLookupByLibrary.simpleMessage(
+      "7. التعديلات على سياسة الخصوصية",
+    ),
+    "privcyTitle8": MessageLookupByLibrary.simpleMessage("8. التواصل معنا"),
     "whoUsGreenButton": MessageLookupByLibrary.simpleMessage("المزيد"),
     "whoUsGreenSubTitle1": MessageLookupByLibrary.simpleMessage(
       "شركة الحوار الاقتصادي — منصة سعودية رائدة في الإعلام المتخصص، التسويق الاستراتيجي، والإنتاج الفني. نعمل عبر:",
