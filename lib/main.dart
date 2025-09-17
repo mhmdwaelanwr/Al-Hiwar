@@ -12,7 +12,7 @@ void main() async{
    final savedLocale = await LocaleManager.getSavedLocale();
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
 
       builder: (context) =>  Bookly(savedLocale: savedLocale), // Wrap your app
     ),
