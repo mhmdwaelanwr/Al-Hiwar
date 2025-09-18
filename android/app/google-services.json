@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "724272325050",
+    "project_id": "hiwar-mangement",
+    "storage_bucket": "hiwar-mangement.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724272325050:android:9dc4cb5fce19615e56bd83",
+        "android_client_info": {
+          "package_name": "com.example.bookly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9r3j79YZQ5SIT4zpaItQcsz2Sdj_QfwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724272325050:android:455d61808a89a0f656bd83",
+        "android_client_info": {
+          "package_name": "com.example.hiwar_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9r3j79YZQ5SIT4zpaItQcsz2Sdj_QfwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724272325050:android:fff375c52fd4a37d56bd83",
+        "android_client_info": {
+          "package_name": "com.example.manage_tv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9r3j79YZQ5SIT4zpaItQcsz2Sdj_QfwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
