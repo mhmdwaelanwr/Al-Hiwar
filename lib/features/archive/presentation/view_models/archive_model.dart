@@ -1,51 +1,47 @@
-import 'package:bookly/core/utils/assets_data.dart';
-import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ArchiveModel {
   ArchiveModel({
-    required this.backgroundImage,
-    required this.title,
-    required this.details1,
-    required this.details2,
-    required this.details3,
+    required this.imageUrl,
+    required this.titleAr,
+    required this.titleEn,
+    required this.details1Ar,
+    required this.details1En,
+    required this.details2Ar,
+    required this.details2En,
+    required this.details3Ar,
+    required this.details3En,
+    required this.createdAt,
   });
-  final Widget backgroundImage;
-  final String title;
-  final String details1;
-  final String details2;
-  final String details3;
 
-  static List<ArchiveModel> archiveItems = [
-    ArchiveModel(
-      backgroundImage: AssetImages.background01,
-      title:
-          "المنتدى العربي للاستثمار يناقش فرص الشراكات بين القطاعين العام والخاص.",
-      details1:
-          "نظم المنتدى العربي للاستثمار، التابع للجامعة العربية، بالتعاون مع وزارة الاستثمار والتعاون الدولي، اليوم الاثنين، ورشة عمل حول \"فرص الشراكات بين القطاعين العام والخاص في الدول العربية\"، بمشاركة عدد من وزراء الاستثمار العرب ومسؤولين حكوميين وخبراء وممثلين عن القطاع الخاص.",
-      details2:
-          "وقال وزير الاستثمار والتعاون الدولي، أشرف العربي، في كلمته الافتتاحية للورشة، إن الشراكة بين القطاعين العام والخاص تعد أداة فعالة لتعزيز التنمية الاقتصادية والاجتماعية في الدول العربية، مشيراً إلى أن هذه الشراكة تساهم في تحسين جودة الخدمات العامة وتوفير فرص عمل جديدة.",
-      details3:
-          "وأضاف العربي أن مصر تولي اهتماماً كبيراً لتعزيز الشراكة بين القطاعين العام والخاص، من خلال تنفيذ عدد من المشاريع الكبرى في مجالات البنية التحتية والطاقة والنقل والصحة والتعليم. وأكد على أهمية التعاون بين الدول العربية لتبادل الخبرات وأفضل الممارسات في هذا المجال.",
-    ),
-    ArchiveModel(
-      backgroundImage: AssetImages.background02,
-      title: "مصر تستضيف الاجتماع السنوي لوزراء الاستثمار العرب",
-      details1:
-          "تستضيف مصر الأسبوع المقبل الاجتماع السنوي لوزراء الاستثمار العرب، والذي تنظمه الجامعة العربية بالتعاون مع وزارة الاستثمار والتعاون الدولي. ويهدف الاجتماع إلى مناقشة سبل تعزيز التعاون الاقتصادي والاستثماري بين الدول العربية، وتبادل الخبرات وأفضل الممارسات في مجال جذب الاستثمارات وتنمية المشاريع الصغيرة والمتوسطة.",
-      details2:
-          "وقال وزير الاستثمار والتعاون الدولي، أشرف العربي، إن الاجتماع سيشهد مشاركة عدد من وزراء الاستثمار العرب ومسؤولين حكوميين وخبراء وممثلين عن القطاع الخاص. وأضاف أن مصر تسعى من خلال هذا الاجتماع إلى تعزيز دورها كمركز إقليمي للاستثمار وجذب المزيد من الاستثمارات الأجنبية المباشرة إلى البلاد.",
-      details3:
-          "وأشار العربي إلى أن مصر قد حققت تقدماً كبيراً في مجال جذب الاستثمارات خلال السنوات الأخيرة، بفضل الإصلاحات الاقتصادية التي نفذتها الحكومة لتحسين بيئة الأعمال وتسهيل إجراءات الاستثمار. وأكد على أهمية التعاون بين الدول العربية لتعزيز التكامل الاقتصادي وتحقيق التنمية المستدامة في المنطقة.",
-    ),
-    ArchiveModel(
-      backgroundImage: AssetImages.background03,
-      title: "مصر تستضيف الاجتماع السنوي لوزراء الاستثمار العرب",
-      details1:
-          "تستضيف مصر الأسبوع المقبل الاجتماع السنوي لوزراء الاستثمار العرب، والذي تنظمه الجامعة العربية بالتعاون مع وزارة الاستثمار والتعاون الدولي. ويهدف الاجتماع إلى مناقشة سبل تعزيز التعاون الاقتصادي والاستثماري بين الدول العربية، وتبادل الخبرات وأفضل الممارسات في مجال جذب الاستثمارات وتنمية المشاريع الصغيرة والمتوسطة.",
-      details2:
-          "وقال وزير الاستثمار والتعاون الدولي، أشرف العربي، إن الاجتماع سيشهد مشاركة عدد من وزراء الاستثمار العرب ومسؤولين حكوميين وخبراء وممثلين عن القطاع الخاص. وأضاف أن مصر تسعى من خلال هذا الاجتماع إلى تعزيز دورها كمركز إقليمي للاستثمار وجذب المزيد من الاستثمارات الأجنبية المباشرة إلى البلاد.",
-      details3:
-          "وأشار العربي إلى أن مصر قد حققت تقدماً كبيراً في مجال جذب الاستثمارات خلال السنوات الأخيرة، بفضل الإصلاحات الاقتصادية التي نفذتها الحكومة لتحسين بيئة الأعمال وتسهيل إجراءات الاستثمار. وأكد على أهمية التعاون بين الدول العربية لتعزيز التكامل الاقتصادي وتحقيق التنمية المستدامة في المنطقة.",
-    ),
-  ];
+  final String imageUrl;
+
+  final String titleAr;
+  final String titleEn;
+
+  final String details1Ar;
+  final String details1En;
+
+  final String details2Ar;
+  final String details2En;
+
+  final String details3Ar;
+  final String details3En;
+
+  final Timestamp createdAt;
+
+  factory ArchiveModel.fromDocument(Map<String, dynamic> doc) {
+    return ArchiveModel(
+      imageUrl: doc['image'] ?? '',
+      titleAr: doc['titleAr'] ?? '',
+      titleEn: doc['titleEn'] ?? '',
+      details1Ar: doc['detail1Ar'] ?? '',
+      details1En: doc['detail1En'] ?? '',
+      details2Ar: doc['detail2Ar'] ?? '',
+      details2En: doc['detail2En'] ?? '',
+      details3Ar: doc['detail3Ar'] ?? '',
+      details3En: doc['detail3En'] ?? '',
+      createdAt: doc['createdAt'] ?? Timestamp.now(),
+    );
+  }
 }

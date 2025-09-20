@@ -4,17 +4,19 @@ import 'package:bookly/features/splash/presentation/views/splash_view_with_photo
 import 'package:bookly/generated/l10n.dart';
 import 'package:bookly/services/localization_shared_prefrance.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // 👈 مهم جدًا
-   final savedLocale = await LocaleManager.getSavedLocale();
+  final savedLocale = await LocaleManager.getSavedLocale();
+  await Firebase.initializeApp();
   runApp(
     DevicePreview(
       enabled: false,
 
-      builder: (context) =>  Bookly(savedLocale: savedLocale), // Wrap your app
+      builder: (context) => Bookly(savedLocale: savedLocale), // Wrap your app
     ),
   );
 }
@@ -25,8 +27,8 @@ class Bookly extends StatelessWidget {
   );
   static bool lanuages = true;
 
-   Bookly({super.key,required Locale savedLocale}){
-     localeNotifier.value = savedLocale;
+  Bookly({super.key, required Locale savedLocale}) {
+    localeNotifier.value = savedLocale;
   }
 
   // This widget is the root of your application.
@@ -36,13 +38,9 @@ class Bookly extends StatelessWidget {
     return ValueListenableBuilder<Locale>(
       valueListenable: localeNotifier,
       builder: (c, v, child) {
-        return
-        MaterialApp(
-           locale: v,
-          supportedLocales: const [
-            Locale('en'),
-            Locale('ar'),
-          ],
+        return MaterialApp(
+          locale: v,
+          supportedLocales: const [Locale('en'), Locale('ar')],
           // use the locale which is set in the device preview
           // wrap your app
           builder: (context, child) {

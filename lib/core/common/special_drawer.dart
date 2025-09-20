@@ -4,6 +4,7 @@ import 'package:bookly/constants/constant_text_style.dart';
 import 'package:bookly/core/common/special_scaffold_with_backgound.dart';
 import 'package:bookly/core/utils/assets_data.dart';
 import 'package:bookly/features/archive/presentation/views/archive_view.dart';
+
 import 'package:bookly/features/contact_us/presentation/views/contact_us_view.dart';
 import 'package:bookly/features/home/presentation/views/after_onboarding.dart';
 
@@ -71,7 +72,7 @@ class _SpecialDrawerState extends State<SpecialDrawer> {
             DrawerItem(
               text: S.of(context).drawerOurDownloadScreen,
               leadingIcon: Icons.article,
-              widgetViewToGo: ArchiveView(),
+              widgetViewToGo: ViewBlogsScreen(),
             ),
             SizedBox(height: 8),
             DrawerItem(
@@ -92,20 +93,19 @@ class _SpecialDrawerState extends State<SpecialDrawer> {
               widgetViewToGo: ConditionsTermsView(),
             ),
             SizedBox(height: 8),
-        
+
             ListTile(
-              
-        
               tileColor: kgrayColor,
               leading: Switch(
                 activeTrackColor: kPrimaryColor,
                 value: Bookly.localeNotifier.value.languageCode == 'ar',
                 onChanged: (val) async {
-                  final newLocale = val ? const Locale('ar') : const Locale('en');
-        
+                  final newLocale =
+                      val ? const Locale('ar') : const Locale('en');
+
                   // تحديث التطبيق
                   Bookly.localeNotifier.value = newLocale;
-        
+
                   // حفظ الاختيار
                   await LocaleManager.saveLocale(newLocale);
                 },
@@ -115,7 +115,6 @@ class _SpecialDrawerState extends State<SpecialDrawer> {
                 style: TextStyles.textStyleNormalWhite,
                 textDirection: TextDirection.rtl,
               ),
-              onTap: () {},
             ),
           ],
         ),
@@ -149,11 +148,13 @@ class DrawerItem extends StatelessWidget {
         style: TextStyles.textStyleNormalWhite,
         textDirection: TextDirection.rtl,
       ),
-      onTap:
-          () => Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (co) => widgetViewToGo),
-          ),
+      onTap: () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (co) => widgetViewToGo),
+        );
+
+      },
     );
   }
 }

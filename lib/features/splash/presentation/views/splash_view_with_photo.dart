@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen>
       duration: const Duration(seconds: 5),
     );
 
-    // تبدأ من خارج الشاشة شمال (-1.5, 0) وتنتهي في النص (0,0)
+    // تبدأ من خارج الشاشة شمال (-2.5, 0) وتنتهي في النص (0,0)
     _animation = Tween<Offset>(
       begin: const Offset(-2.5, 0), // خارج الشاشة يسار
       end: Offset.zero, // مكانها الطبيعي
