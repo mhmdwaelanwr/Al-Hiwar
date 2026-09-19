@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:bookly/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +14,7 @@ class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
+  late final Timer _navigationTimer;
 
   @override
   void initState() {
@@ -37,8 +40,10 @@ class _SplashScreenState extends State<SplashScreen>
 
     _controller.forward();
 
-    // بعد الأنيميشن + ثانية واحدة → يروح لـ OnbordingViews
-    Future.delayed(const Duration(seconds: 5), () {
+    // بعد الأنيميشن يروح لـ OnbordingViews إذا كانت الشاشة ما زالت mounted.
+    _navigationTimer = Timer(const Duration(seconds: 5), () {
+      if (!mounted) return;
+
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const OnbordingViews()),
@@ -48,6 +53,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   void dispose() {
+    _navigationTimer.cancel();
     _controller.dispose();
     super.dispose();
   }
