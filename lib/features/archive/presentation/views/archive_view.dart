@@ -39,16 +39,22 @@ class _ViewBlogsScreenState extends State<ViewBlogsScreen> {
             return Center(
               child: Column(
                 children: [
-                  Text("المدونات", style: TextStyles.textStyleTitleGreen),
                   Text(
-                    "لا توجد مدونات حالياً",
+                    ar ? "المدونات" : "Blogs",
+                    style: TextStyles.textStyleTitleGreen,
+                  ),
+                  Text(
+                    ar ? "لا توجد مدونات حالياً" : "No blogs available right now",
                     style: TextStyles.textStyleNormalWhite,
+                    textDirection: ar ? TextDirection.rtl : TextDirection.ltr,
                   ),
                   SizedBox(height: AppDimensions.largePadding),
                   Text(
-                    "اضف مدونة جديدة من خلال الضغط على زر الإضافة",
+                    ar
+                        ? "اضف مدونة جديدة من خلال الضغط على زر الإضافة"
+                        : "Add a new blog using the add button",
                     style: TextStyles.textStyleSmallSilver,
-                    textDirection: TextDirection.rtl,
+                    textDirection: ar ? TextDirection.rtl : TextDirection.ltr,
                   ),
                   SizedBox(height: AppDimensions.largePadding),
                 ],
