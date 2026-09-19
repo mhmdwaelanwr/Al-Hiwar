@@ -35,6 +35,16 @@ class _ViewBlogsScreenState extends State<ViewBlogsScreen> {
             return const Center(child: CircularProgressIndicator());
           }
 
+          if (snapshot.hasError) {
+            return Center(
+              child: Text(
+                ar ? "تعذر تحميل المدونات" : "Unable to load blogs",
+                style: TextStyles.textStyleNormalWhite,
+                textDirection: ar ? TextDirection.rtl : TextDirection.ltr,
+              ),
+            );
+          }
+
           if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
             return Center(
               child: Column(
