@@ -21,9 +21,16 @@ class OnbordingViews extends StatefulWidget {
 }
 
 class _OnbordingViewsState extends State<OnbordingViews> {
-  var boardController = PageController();
+  final PageController boardController = PageController();
 
   bool isLastPage = false;
+
+  @override
+  void dispose() {
+    boardController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     
