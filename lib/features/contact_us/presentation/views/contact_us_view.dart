@@ -149,8 +149,9 @@ class ContactUsContainer extends StatelessWidget {
     }
   }
 
-  final Uri emailUrl = Uri.parse(
-    'https://www.bing.com/ck/a?!&&p=7b260a723238d030bce5100fbce9570cb2e7077ab1d0cccd740b584cfd8b8352JmltdHM9MTc1NjY4NDgwMA&ptn=3&ver=2&hsh=4&fclid=2bba237c-6eec-6284-058d-32086fff6347&psq=Info%40alhiwaraliqtisadi.com&u=a1aHR0cHM6Ly9hbGhpd2FyYWxpcXRpc2FkaS5jb20v&ntb=1',
+  final Uri emailUrl = Uri(
+    scheme: 'mailto',
+    path: 'info@alhiwar.sa',
   );
 
   Future<void> _launchUrl(Uri url) async {
